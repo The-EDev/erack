@@ -9,6 +9,11 @@ General Idea:
 5. App shows everyone's times and the best time (time with most overlap).
 
 Requirements:
-- Some frontend (mobile, desktop, and/or web application).
-- Some backend (just to keep everything synced).
+- Some frontend (mobile, desktop, and/or web application, it'll handle data processing (aka it'll find the most suitable time)).
+- Some backend (just to smooth data transfer and sync stored data).
 - Some way to store data such that 2 ppl can send results without conflict SQL? JSON? text files?.
+
+Data:
+- Available time list: a list of start and end times
+- Event: Contains available time list and user list
+- User : Created per event and contains available times list
