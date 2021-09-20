@@ -17,3 +17,9 @@ Data:
 - Available time list: a list of start and end times
 - Event: Contains available time list and user list
 - User : Created per event and contains available times list
+
+## Compiling Crow Backend
+Run the following command in `/backend/cpp`, you'll need `boost` installed (easy on linux, might as well give up on windows).
+```
+g++ main.cpp -lpthread -o erack_be
+```
